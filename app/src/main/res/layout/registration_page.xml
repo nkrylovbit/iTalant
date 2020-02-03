@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    tools:context=".activities.RegistrationActivity_"
+    android:focusableInTouchMode="true">
+
+
+    <ImageView
+        android:id="@+id/activity.registration.iv.logo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/login_italent_logo"
+        android:contentDescription="@string/logo" />
+
+    <ru.vnn.nick.italent.view.AutoUnfocusEditText
+        android:id="@+id/activity.registration.et.username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="@string/phone"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/sfuitextlight"
+        android:textSize="18sp"
+        android:importantForAutofill="no" />
+
+    <ru.vnn.nick.italent.view.AutoUnfocusEditText
+        android:id="@+id/activity.registration.et.password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/sfuitextlight"
+        android:textSize="18sp"
+        android:importantForAutofill="no" />
+
+
+    <Button
+        android:id="@+id/activity.registration.button.signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/loginButton"
+        android:text="@string/signup"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/sfuitextregular"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/doYouHaveAccText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/do_you_have_account"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:fontFamily="@font/sfuitextlight"/>
+
+        <TextView
+            android:id="@+id/activity.registration.button.signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:text="@string/signin"
+            android:textColor="@color/primaryPink"
+            android:textSize="15sp"
+            android:fontFamily="@font/sfuitextlight"/>
+    </LinearLayout>
+</LinearLayout>

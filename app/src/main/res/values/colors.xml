@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#354e66</color>
+    <color name="colorPrimaryDark">#354e66</color>
+    <color name="overlayColorPrimaryDark">#88354e66</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="primaryPink">#E12A6F</color>
+    <color name="test">#097134</color>
+    <color name="white">#FFFFFF</color>
+    <color name="semiwhite">#CFCFCF</color>
+    <color name="ninePercentWhite">#EEEEEE</color>
+
+    <color name="black_overlay">#77000000</color>
+    <color name="overlay">#00000000</color>
+    <color name="semioverlay">#55000000</color>
+    <color name="overlay70percent">#AA000000</color>
+    <color name="background">#F3F5F7</color>
+    <color name="statusBarBackground">#e7ebef</color>
+    <color name="searchTextColor">#7d858d</color>
+    <color name="searchTextActiveColor">#384f66</color>
+    <color name="talentsList">#FF061828</color>
+    <color name="loginButton">#FF384f66</color>
+
+    <color name="red">#FFFF0000</color>
+    <color name="orange">#FFFF9200</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="green">#FF5DE100</color>
+    <color name="darkgreen">#FF00C90D</color>
+    <color name="whiteblue">#FF009999</color>
+    <color name="blue">#FF0B61A4</color>
+    <color name="darkblue">#FF1B1BB3</color>
+    <color name="violet">#FF7109AA</color>
+    <color name="pink">#FFCB0077</color>
+    <color name="black">#FF000000</color>
+</resources>

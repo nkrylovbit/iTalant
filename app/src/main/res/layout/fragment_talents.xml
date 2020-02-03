@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ru.vnn.nick.italent.fragments.TalentsFragment_">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overlay70percent"
+        android:orientation="vertical">
+
+        <include layout="@layout/search_line" />
+
+        <ScrollView
+            android:id="@+id/talents_searcher_sv"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+        </ScrollView>
+
+        <HorizontalScrollView
+            android:id="@+id/color_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/color_red"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/red" />
+
+                <Button
+                    android:id="@+id/color_orange"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/orange" />
+
+                <Button
+                    android:id="@+id/color_yellow"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/yellow" />
+
+                <Button
+                    android:id="@+id/color_green"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/green" />
+
+                <Button
+                    android:id="@+id/color_darkgreen"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/darkgreen" />
+
+                <Button
+                    android:id="@+id/color_whiteblue"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/whiteblue" />
+
+                <Button
+                    android:id="@+id/color_blue"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/blue" />
+
+                <Button
+                    android:id="@+id/color_darkblue"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/darkblue" />
+
+                <Button
+                    android:id="@+id/color_violet"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/violet" />
+
+                <Button
+                    android:id="@+id/color_pink"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/pink" />
+
+                <Button
+                    android:id="@+id/color_black"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/black" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/talent_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rectangle_talent_label"
+            android:fontFamily="@font/sfuitextlight"
+            android:padding="3dp"
+            android:text="@string/newTalent"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+</FrameLayout>

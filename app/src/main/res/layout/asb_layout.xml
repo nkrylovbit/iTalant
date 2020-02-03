@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/title_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/sfuitextsemibold"
+        android:gravity="center"
+        android:textColor="@color/searchTextActiveColor"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/search_line"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textline"/>
+
+        <FrameLayout
+            android:id="@+id/search_fl_choice"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <LinearLayout
+                android:id="@+id/search_ll_choice"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/search_button_people"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="@string/searchPeople"
+                    android:fontFamily="@font/sfuitextsemibold"
+                    android:textSize="18sp"
+                    android:textColor="@color/searchTextActiveColor"
+                    android:gravity="center"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/search_button_talent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/searchTelent"
+                    android:fontFamily="@font/sfuitextsemibold"
+                    android:textSize="18sp"
+                    android:textColor="@color/searchTextColor"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom">
+                <ImageView
+                    android:id="@+id/selected_search_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/search_selected"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.design.widget.AppBarLayout>

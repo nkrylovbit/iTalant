@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.vnn.nick.italent.PhotoPreviewActivity"
+    android:background="@color/statusBarBackground">
+
+    <FrameLayout
+        android:id="@+id/preview_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/media_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@color/colorPrimaryDark"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:id="@+id/post_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/talent_choicer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/choiceTalent"
+                            android:fontFamily="@font/sfuitextregular"
+                            android:textColor="@color/searchTextActiveColor"
+                            android:textSize="20sp" />
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/talents_list"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:orientation="horizontal">
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <TextView
+                            android:id="@+id/tv_new_talent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="80dp"
+                            android:fontFamily="@font/sfuitextsemibold"
+                            android:text="@string/newTalent"
+                            android:textColor="@color/searchTextActiveColor"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimaryDark">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="58dp"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <ru.vnn.nick.italent.view.AutoUnfocusEditText
+                    android:id="@+id/post_title_preview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:fontFamily="@font/sfuitextregular"
+                    android:gravity="start"
+                    android:inputType="textAutoCorrect|textAutoComplete"
+                    android:paddingBottom="20dp"
+                    android:text="@string/input_comment"
+                    android:textColor="@color/searchTextColor"
+                    android:textSize="16sp"
+                    android:lines="1"
+                    android:maxLines="2"
+                    android:maxLength="100"
+                    />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/verticatl_rectangle"
+                        android:tint="@color/searchTextColor"/>
+                    <TextView
+                        android:id="@+id/button_send_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:paddingLeft="20dp"
+                        android:paddingBottom="20dp"
+                        android:gravity="start"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/sfuitextsemibold"
+                        android:textColor="@color/primaryPink"
+                        android:textSize="16sp"
+                        android:text="@string/send"/>
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/talents_searcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</FrameLayout>

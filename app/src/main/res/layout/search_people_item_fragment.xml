@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_people_item_fragment"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginStart="10dp">
+
+    <ImageView
+        android:id="@+id/people_item_avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/avatar"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp">
+        <TextView
+            android:id="@+id/people_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/people_username_search"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/sfuitextregular"
+            android:textSize="18sp"
+            android:text="nagibator2000"
+            android:gravity="bottom"
+            android:textColor="@color/searchTextActiveColor"/>
+
+        <TextView
+            android:id="@+id/people_name_search"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/sfuitextlight"
+            android:textSize="18sp"
+            android:text="Nagibator Velikolepniy"
+            android:textColor="@color/searchTextColor"/>
+    </LinearLayout>
+
+</LinearLayout>

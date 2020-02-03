@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/camera_activity_fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.vnn.nick.italent.activities.CameraActivity">
+    <!--<SurfaceView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <!--<ru.vnn.nick.italent.camera.views.AutoFitTextureView-->
+        <!--android:id="@+id/camera_preview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+    <SurfaceView
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/bt_camera_back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:background="@color/overlay"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow_back"
+            android:tint="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/bt_camera_switch"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:background="@color/overlay"
+            android:scaleType="fitCenter"
+            android:src="@drawable/switch_camera"
+            android:tint="@color/white"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/bt_camera_gallery"
+            android:layout_width="103dp"
+            android:layout_height="95dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:adjustViewBounds="true"
+            android:background="@color/overlay"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gallery"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_editor_absoluteY="417dp" />
+
+        <ImageButton
+            android:id="@+id/bt_camera_click"
+            android:layout_width="109dp"
+            android:layout_height="99dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:adjustViewBounds="true"
+            android:background="@color/overlay"
+            android:scaleType="fitCenter"
+            android:src="@drawable/click_camera"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/bt_camera_gallery"
+            app:layout_constraintRight_toLeftOf="@+id/bt_camera_video"
+            tools:layout_editor_absoluteX="139dp"
+            tools:layout_editor_absoluteY="404dp" />
+
+        <ImageButton
+            android:id="@+id/bt_camera_video"
+            android:layout_width="103dp"
+            android:layout_height="95dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:adjustViewBounds="true"
+            android:background="@color/overlay"
+            android:scaleType="fitCenter"
+            android:src="@drawable/switch_video"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteX="273dp"
+            tools:layout_editor_absoluteY="408dp" />
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>
+

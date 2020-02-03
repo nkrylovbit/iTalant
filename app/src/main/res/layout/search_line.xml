@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="20dp"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:src="@drawable/search_icon"
+        android:layout_gravity="center"/>
+
+    <ru.vnn.nick.italent.view.AutoUnfocusEditText
+        android:id="@+id/search_text"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:fontFamily="@font/sfuitextregular"
+        android:gravity="start"
+        android:layout_gravity="center"
+        android:paddingStart="16sp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textAutoCorrect|textAutoComplete"
+        android:maxLength="30"
+        android:paddingBottom="0dp"
+        android:text="@string/searchForPeople"
+        android:textColor="@color/searchTextColor"
+        android:textSize="16sp"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/search_reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:paddingEnd="10dp"
+        android:src="@drawable/search_btn_clean"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+</LinearLayout>

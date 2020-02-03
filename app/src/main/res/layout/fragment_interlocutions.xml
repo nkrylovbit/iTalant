@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_interlocutions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.vnn.nick.italent.InterlocutionsFragment">
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_interlocutions"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical|center_horizontal"-->
+    <!--android:text="Interlocutions"/>-->
+    <!--&lt;!&ndash;android:textAppearance="?android:attr/textAppearanceLarge" />&ndash;&gt;-->
+
+    <ScrollView
+        android:id="@+id/sv_interlocutions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:id="@+id/system_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/sfuitextregular"
+        android:gravity="center"
+        android:text="@string/noMessage"
+        android:textColor="@color/searchTextColor"
+        android:textSize="18sp" />
+
+</FrameLayout>
